@@ -1,5 +1,35 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>sido</th>
+            <th>name</th>
+            <th>medical</th>
+            <th>room</th>
+            <th>tell</th>
+            <th>adress</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for h in list %}
+        <tr>
+        <td>{{h.id}}</td>
+        <td>{{h.sido}}</td>
+        <td>{{h.name}}</td>
+        <td>{{h.medical}}</td>
+        <td>{{h.room}}</td>
+        <td>{{h.tel}}</td>
+        <td>{{h.adress}}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+<!-- 
 <h1>{{ list }}</h1>
 
-{% for h in list %}
-    <p>{{h.id}} {{h.sido}} {{h.name}} {{h.medical}} {{h.room}} {{h.tel}} {{h.adress}}</p>
-{% endfor %}
+    <p>{{h.id}} {{h.sido}} {{h.name}} {{h.medical}} {{h.room}} {{h.tel}} {{h.adress}}</p> -->
